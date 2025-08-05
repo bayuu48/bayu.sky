@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+  background-image: linear-gradient(to left bottom, #1f1f1f, #543b50, #9e5467, #e0785f, #ffb347);
+}
+
 .row {
   display: flex;
   justify-content: space-around;
@@ -14,7 +20,7 @@
 }
 
 .kolom.tengah {
-  align-items: bottom;
+  align-items: center;
 }
 
 .judul {
@@ -36,19 +42,16 @@
 }
 
 .kotak {
-  background: #a09696;
-  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(255,255,255,0.2);
   padding: 20px;
   text-align: center;
   min-height: 400px;
   width: 100%;
   box-sizing: border-box;
-  background: rgba(255, 255, 255, 0.1); /* transparan */
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px); 
-  border-radius: 20px;
-  border: 1px solid rgba(255,255,255,0.2);
-  padding: 20px;
 }
 
 .image-box {
@@ -76,20 +79,29 @@
   line-height: 1.5;
   text-align: center;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
- font-family: 'Poppins', arial;
+  font-family: 'Poppins', arial;
 }
-
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
 
 .kanan {
   color: #F5F5F5;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
-  font-family: 'Poppins' arial;
+  font-family: 'Poppins', arial;
 }
 
-body {
-  background-image: linear-gradient(to left bottom, #1f1f1f, #543b50, #9e5467, #e0785f, #ffb347);
+.desc h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+}
 
+#meteorCanvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
 }
