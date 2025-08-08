@@ -1,4 +1,4 @@
-alert("WEB INI BISA DI JALANKAN!!");
+alert("Hi Ini Saya!");
     
 const canvas = document.getElementById('meteorCanvas');
 const ctx = canvas.getContext('2d');
